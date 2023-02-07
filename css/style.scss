@@ -1,0 +1,150 @@
+/* ------------------ COLORS ----------------- */
+
+// ### Primary
+$very-dark-blue: hsl(233, 47%, 7%);
+$dark-desaturated-blue: hsl(244, 38%, 16%);
+$soft-violet: hsl(277, 64%, 61%);
+$soft-transparant-violet: hsl(277, 100%, 40%, 70%);
+
+// ### Neutral
+$white: hsl(0, 0%, 100%);
+$slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+$transparent-white: hsla(0, 0%, 100%, 0.6);
+
+/* ------------------ CSS RESET ----------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  background-color: $very-dark-blue;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ------------------ CSS RESET ----------------- */
+
+.card-container {
+  background-color: $dark-desaturated-blue;
+  display: flex;
+  max-width: 75rem;
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    width: 50%;
+    color: $white;
+
+    .header-title {
+      font-size: 2.45rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
+
+    .header-text {
+      color: $slightly-transparent-white;
+      max-width: 81%;
+      line-height: 1.6;
+    }
+
+    .statistics-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 81%;
+      margin-top: auto;
+      .statistic {
+        display: flex;
+        flex-direction: column;
+        .statistic-number {
+          line-height: 1;
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+          font-size: 1.7rem;
+        }
+
+        .statistic-subheading {
+          font-size: 0.9rem;
+          font-family: "Lexend Deca", sans-serif;
+          color: $transparent-white;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+}
+
+.insights {
+  color: $soft-violet;
+}
+
+.header-image {
+  width: 100%;
+}
+.overlay-container {
+  position: relative;
+  width: 50%;
+}
+
+.overlay-container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: $soft-transparant-violet;
+}
+/* ------------------ FOOTER ----------------- */
+.attribution {
+  margin-top: 2rem;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: $soft-violet;
+  }
+}
+
+/* ------------------ HELPER CLASSES ----------------- */
+.uppercase {
+  text-transform: uppercase;
+}
