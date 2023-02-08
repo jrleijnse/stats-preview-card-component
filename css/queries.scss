@@ -1,2 +1,68 @@
 @media (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+    text-align: center;
+    max-width: 22rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    .header-container {
+      padding: 0rem;
+      width: fit-content;
+
+      .header-title {
+        font-size: 1.8rem;
+      }
+
+      .header-text {
+        max-width: 100%;
+      }
+
+      .statistics-container {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+
+        .statistic {
+          display: flex;
+          flex-direction: column;
+
+          .statistic-number {
+            color: white;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 1.7rem;
+          }
+
+          .statistic-subheading {
+            font-size: 0.9rem;
+            font-family: "Lexend Deca", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+
+  .header-image {
+    width: 100%;
+    border-radius: 0rem 0.8rem 0.8rem 0rem;
+  }
+  .overlay-container {
+    position: relative;
+    width: 50%;
+  }
+
+  /* ------------------ FOOTER ----------------- */
+  .attribution {
+    margin-top: 2rem;
+  }
+
+  /* ------------------ HELPER CLASSES ----------------- */
+  .uppercase {
+    text-transform: uppercase;
+  }
 }

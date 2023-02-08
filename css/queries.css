@@ -1,1 +1,59 @@
-/*# sourceMappingURL=queries.css.map */
+@media (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+    text-align: center;
+    max-width: 22rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .card-container .header-container {
+    padding: 0rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .card-container .header-container .header-title {
+    font-size: 1.8rem;
+  }
+  .card-container .header-container .header-text {
+    max-width: 100%;
+  }
+  .card-container .header-container .statistics-container {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .card-container .header-container .statistics-container .statistic {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container .header-container .statistics-container .statistic .statistic-number {
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  .card-container .header-container .statistics-container .statistic .statistic-subheading {
+    font-size: 0.9rem;
+    font-family: "Lexend Deca", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .header-image {
+    width: 100%;
+    border-radius: 0rem 0.8rem 0.8rem 0rem;
+  }
+  .overlay-container {
+    position: relative;
+    width: 50%;
+  }
+  /* ------------------ FOOTER ----------------- */
+  .attribution {
+    margin-top: 2rem;
+  }
+  /* ------------------ HELPER CLASSES ----------------- */
+  .uppercase {
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=queries.css.map */

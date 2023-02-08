@@ -53,6 +53,8 @@ select {
   background-color: hsl(244deg, 38%, 16%);
   display: flex;
   max-width: 75rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
 }
 .card-container .header-container {
   display: flex;
@@ -62,20 +64,21 @@ select {
   color: hsl(0deg, 0%, 100%);
 }
 .card-container .header-container .header-title {
-  font-size: 2.45rem;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2.3rem;
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   line-height: 1.3;
 }
 .card-container .header-container .header-text {
   color: hsla(0deg, 0%, 100%, 0.75);
-  max-width: 81%;
+  max-width: 84%;
   line-height: 1.7;
 }
 .card-container .header-container .statistics-container {
   display: flex;
   justify-content: space-between;
-  max-width: 81%;
+  max-width: 84%;
   margin-top: auto;
 }
 .card-container .header-container .statistics-container .statistic {
@@ -83,6 +86,7 @@ select {
   flex-direction: column;
 }
 .card-container .header-container .statistics-container .statistic .statistic-number {
+  color: white;
   line-height: 1;
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -102,6 +106,7 @@ select {
 
 .header-image {
   width: 100%;
+  border-radius: 0rem 0.8rem 0.8rem 0rem;
 }
 
 .overlay-container {
@@ -115,7 +120,7 @@ select {
   width: 100%;
   height: 100%;
   top: 0;
-  background: hsla(277deg, 100%, 30%, 0.8);
+  background: hsla(277deg, 83%, 28%, 0.67);
 }
 
 /* ------------------ FOOTER ----------------- */
