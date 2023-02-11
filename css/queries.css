@@ -1,56 +1,53 @@
 @media (max-width: 375px) {
   .card-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     max-width: 22rem;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    margin: 5rem 0rem 2.5rem;
   }
   .card-container .header-container {
-    padding: 0rem;
     width: -moz-fit-content;
     width: fit-content;
+    padding: 2rem;
   }
   .card-container .header-container .header-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    margin: 0.5rem 0rem 1rem 0rem;
   }
   .card-container .header-container .header-text {
     max-width: 100%;
+    margin-bottom: 2.5rem;
   }
   .card-container .header-container .statistics-container {
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
   }
-  .card-container .header-container .statistics-container .statistic {
-    display: flex;
-    flex-direction: column;
+  .card-container .header-container .statistics-container .statistic:not(:last-child) {
+    margin-bottom: 2rem;
   }
-  .card-container .header-container .statistics-container .statistic .statistic-number {
-    color: white;
-    line-height: 1;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    font-size: 1.7rem;
-  }
-  .card-container .header-container .statistics-container .statistic .statistic-subheading {
+  .card-container .header-container .statistics-container .statistic:not(:last-child) .statistic-subheading {
     font-size: 0.9rem;
     font-family: "Lexend Deca", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
-  .header-image {
+  .card-container .overlay-container {
+    display: flex;
     width: 100%;
-    border-radius: 0rem 0.8rem 0.8rem 0rem;
+    top: 0;
   }
-  .overlay-container {
-    position: relative;
-    width: 50%;
+  .card-container .overlay-container .header-image {
+    display: none;
+  }
+  .card-container .overlay-container .header-image-mobile {
+    display: block;
   }
   /* ------------------ FOOTER ----------------- */
   .attribution {
-    margin-top: 2rem;
+    margin: 0rem 0rem 2.5rem 0rem;
   }
   /* ------------------ HELPER CLASSES ----------------- */
   .uppercase {

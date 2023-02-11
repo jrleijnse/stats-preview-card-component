@@ -85,14 +85,22 @@ select {
   display: flex;
   flex-direction: column;
 }
-.card-container .header-container .statistics-container .statistic .statistic-number {
+.card-container
+  .header-container
+  .statistics-container
+  .statistic
+  .statistic-number {
   color: white;
   line-height: 1;
   margin-bottom: 0.5rem;
   font-weight: 600;
   font-size: 1.7rem;
 }
-.card-container .header-container .statistics-container .statistic .statistic-subheading {
+.card-container
+  .header-container
+  .statistics-container
+  .statistic
+  .statistic-subheading {
   font-size: 0.9rem;
   font-family: "Lexend Deca", sans-serif;
   color: hsla(0deg, 0%, 100%, 0.6);
@@ -107,6 +115,10 @@ select {
 .header-image {
   width: 100%;
   border-radius: 0rem 0.8rem 0.8rem 0rem;
+}
+
+.header-image-mobile {
+  display: none;
 }
 
 .overlay-container {
@@ -137,4 +149,4 @@ select {
 /* ------------------ HELPER CLASSES ----------------- */
 .uppercase {
   text-transform: uppercase;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
