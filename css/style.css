@@ -1,3 +1,4 @@
+/* ------------------ COLORS ----------------- */
 /* ------------------ CSS RESET ----------------- */
 *,
 *::before,
@@ -148,4 +149,4 @@ select {
 /* ------------------ HELPER CLASSES ----------------- */
 .uppercase {
   text-transform: uppercase;
-}
+} /*# sourceMappingURL=style.css.map */
