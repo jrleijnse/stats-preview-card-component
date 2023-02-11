@@ -5,7 +5,7 @@
     max-width: 22rem;
     align-items: center;
     justify-content: center;
-    margin: 5rem 0rem 2.5rem;
+    margin: 5.4rem 0rem 2.7rem;
 
     .header-container {
       width: fit-content;
@@ -28,20 +28,12 @@
 
         .statistic:not(:last-child) {
           margin-bottom: 2rem;
-
-          .statistic-subheading {
-            font-size: 0.9rem;
-            font-family: "Lexend Deca", sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-          }
         }
       }
     }
     .overlay-container {
       display: flex;
       width: 100%;
-      top: 0;
       .header-image {
         display: none;
       }
@@ -53,11 +45,7 @@
 
   /* ------------------ FOOTER ----------------- */
   .attribution {
-    margin: 0rem 0rem 2.5rem 0rem;
-  }
-
-  /* ------------------ HELPER CLASSES ----------------- */
-  .uppercase {
-    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin: 0rem 0rem 2.7rem;
   }
 }
